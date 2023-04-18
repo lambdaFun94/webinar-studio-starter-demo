@@ -1,4 +1,4 @@
-# Studio DXP Demo
+# Yext Studio Starter
 
 ## What is Studio?
 

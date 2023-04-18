@@ -23,11 +23,11 @@ export const config: TemplateConfig = {
     $id: "skis",
     filter: { entityTypes: ["ce_product"] },
     localization: { locales: ["en"], primary: false },
-    fields: ["name", "c_price", "c_Description", "photoGallery"],
+    fields: ["name", "c_price", "description", "photoGallery", "slug"],
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return document.slug ?? document.id.toString();
+  return document.slug ?? document.entityId.toString();
 };
 
 export default function Product({ document }: TemplateProps) {
@@ -48,18 +48,18 @@ export default function Product({ document }: TemplateProps) {
                   textSize="4xl"
                 />
                 <HStack>
-                  <Label value={document.c_price} />
+                  <Label value={`$${document.c_price}`} />
                   <Reviews averageRating={5} reviewCount={1995} />
                 </HStack>
                 <Paragraph
-                  value={`${document.c_productDescription}`}
+                  value={`${document.description}`}
                   fontWeight="light"
                   textSize="base"
                 />
               </VStack>
               <ProductImage
-                src={document.photoGallery[0].image.url}
-                alt="Light green backpack with black canvas straps and front zipper pouch."
+                src={`${document.photoGallery[0].image.url}`}
+                alt="a pair of skis"
               />
             </GridContainer>
             <ItemsGrid title="Similar Items">

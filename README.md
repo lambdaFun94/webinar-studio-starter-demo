@@ -2,27 +2,28 @@
 
 ## What is Studio?
 
-Studio is a tool that lets Admins and Developers alike build React Applications with ease. For now, we're focused on Applications corresponding to a Site. But, that may change in the future. It provides a no-code, visual Editor that allows users to add and remove pages, add and remove Components to pages, and configure Components on a page. Here's a screenshot of Studio in action:
+Studio is a tool that lets Admins and Developers alike build React Applications with ease. For now, we're focused on Applications corresponding to a Site. But, that may change in the future. It provides a no-code, visual editor that allows users to add and remove Components to pages, and configure Components on a page. Here's a screenshot of Studio in action:
+
 
 ![enter image description here](https://yext-studio-images.s3.amazonaws.com/Screen+Shot+2023-02-02+at+8.58.09+AM.png)
 
-Okay, cool. But how is this really different from SquareSpace or Landing Pages? For starters, Studio generates a React Site under the hood. That means better page performance. However, the key difference is the accessibility of the generated files. As users perform operations in the Editor, Studio is writing human-readable, well formulated TSX files to the repo. Developers can easily work with, and directly modify, these TSX files outside Studio, as need be. Neither SquareSpace nor Landing Pages make the generated code accessible. Even if they did, the code is not human readable.
+As users perform operations in the Editor, Studio is writing human-readable, well formulated TSX files to the repo. Developers can easily work with, and directly modify, these TSX files outside Studio, as need be.
 
 ## Setting up your Studio Repository
 
-1. To start, clone this starter repo. It mimics a PagesJS-style setup.
-2. Make sure you're using a modern Node version, specifically v18.
-3. Run `npm install`.
-4. The starter is meant to be used with Slapshot's test account in Production (`businessId` of 3350634). Using the Yext CLI, generate authorization credentials for this account.
+1. To start, clone this starter repo
+1. Ensure you have the Pages development dependencies installed. Directions here TODO.
+1. Make sure you're using node 18.
+1. Run `npm install`.
+1. Connect to your yext account with `yext init <acount_id>` or `yext init -u sandbox <account_id>` if using a sandbox account. 
+1. Cd into the starter repo and run `yext resources apply platform-config`. This will add some dummy data to your sandbox account.
+1. Run `npm run studio` and follow the login prompts. 
+1. You should now see Yext Studio appear in the browser
 
-To make sure you're set up properly, invoke `npm run studio` in the terminal. Instead of the PagesJS dev server being spun up, you should see Yext Studio appear!
-
-This command is set up to first generate the features.json and local test data before starting Studio.
-If you would like to just start Studio without additional setup, you can run `npx studio`.
 
 ## Adding and Removing Pages
 
-Your Site currently has one page: `location`. This page is actually an Entity Template. Studio's chosen a random Entity to render the preview you see. You'll want to add more pages, which can be either Static or Entity Templates. A new page can be added by using the `+` icon here:
+Your Site currently has one page: `product`. This page is actually an Entity Template. Studio's chosen a random Entity to render the preview you see. You'll want to add more pages, which can be either Static or Entity Templates. A new page can be added by using the `+` icon here:
 
 ![enter image description here](https://yext-studio-images.s3.amazonaws.com/Screen+Shot+2023-02-02+at+9.07.15+AM.png)
 
@@ -75,7 +76,7 @@ const Component: Template<TemplateRenderProps> = ({document, props: ComponentPro
 export default Component;
 ```
 
-The `fields` attribute of the Stream Configuration can be populated from the UI. If someone were to use `document.address` as the value for an `Expression` prop, Studio would addend `"address"` to the `fields` array. All other aspects of the Stream (`localization`, `filter`, etc.) must be configured directly in the file by the Developer.
+The `fields` attribute of the Stream Configuration can be populated from the UI. If someone were to use `document.name` as the value for an `Expression` prop, Studio would addend `"name"` to the `fields` array. All other aspects of the Stream (`localization`, `filter`, etc.) must be configured directly in the file by the Developer.
 
 Once an `Expression` value is used for a prop, and the above setup is complete, the page becomes an Entity Template, it's no longer Static.
 

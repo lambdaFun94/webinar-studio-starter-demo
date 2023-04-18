@@ -9,6 +9,7 @@ import Item from "../components/Item";
 import ItemsGrid from "../components/ItemsGrid";
 import Label from "../components/Label";
 
+import BigButton from "../components/BigButton";
 import CenteredContainer from "../components/CenteredContainer";
 import PageLayout from "../components/PageLayout";
 import Paragraph from "../components/Paragraph";
@@ -61,6 +62,7 @@ export default function Product({ document }: TemplateProps) {
                 src={`${document.photoGallery[0].image.url}`}
                 alt="a pair of skis"
               />
+              <BigButton title={`Buy Now`} href="#" />
             </GridContainer>
             <ItemsGrid title="Similar Items">
               <Item

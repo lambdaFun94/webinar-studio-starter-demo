@@ -9,7 +9,7 @@ export interface PricingProps {
   cta2Color?: string;
 }
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -63,18 +63,7 @@ const pricing = {
   ],
 };
 
-const Pricing = (props: PricingProps) => {
-  const { heading, paragraph, cta1Label, cta1Color, cta2Label, cta2Color } =
-    props;
-
-  const cta1Styling = {
-    backgroundColor: `${cta1Color}`,
-  };
-
-  const cta2Styling = {
-    backgroundColor: `${cta2Color}`,
-  };
-
+const Pricing = () => {
   return (
     <>
       <div className="mx-auto max-w-7xl bg-white py-24 px-6 lg:px-8">
@@ -82,7 +71,7 @@ const Pricing = (props: PricingProps) => {
           Pricing plans for teams of all sizes
         </h2>
         <p className="mt-6 max-w-2xl text-xl text-gray-500">
-          Choose an affordable plan that's packed with the best features for
+          Choose an affordable plan that is packed with the best features for
           engaging your audience, creating customer loyalty, and driving sales.
         </p>
 

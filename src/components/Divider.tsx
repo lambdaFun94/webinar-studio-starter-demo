@@ -1,5 +1,3 @@
-import { twMerge } from "tailwind-merge";
-import siteSettings from "../siteSettings";
 
 export interface DividerProps {
   color?: string;

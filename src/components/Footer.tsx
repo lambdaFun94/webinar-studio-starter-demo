@@ -96,14 +96,6 @@ const navigation = {
 const Footer = (props: FooterProps) => {
   const { logo, paragraph } = props;
 
-  // const bgStyling = {
-  //   backgroundColor: `${backgroundColor}`
-  // }
-
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
-
   return (
     <>
       <footer className="bg-white" aria-labelledby="footer-heading">

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "primaryEntityType": "location",
+  "entityTypeSettings": [
+    {
+      "entityType": "location",
+      "defaultFieldEligibilityGroup": "location.default",
+      "disabled": false
+    },
+    {
+      "entityType": "healthcareProfessional",
+      "disabled": true
+    },
+    {
+      "entityType": "ce_collection",
+      "defaultFieldEligibilityGroup": "ce_collection.default",
+      "disabled": false
+    },
+    {
+      "entityType": "healthcareFacility",
+      "disabled": true
+    },
+    {
+      "entityType": "event",
+      "disabled": true
+    },
+    {
+      "entityType": "hotelRoomType",
+      "disabled": true
+    },
+    {
+      "entityType": "atm",
+      "disabled": true
+    },
+    {
+      "entityType": "restaurant",
+      "disabled": true
+    },
+    {
+      "entityType": "organization",
+      "disabled": true
+    },
+    {
+      "entityType": "ce_abilityLevel",
+      "defaultFieldEligibilityGroup": "ce_abilityLevel.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_site",
+      "defaultFieldEligibilityGroup": "ce_site.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_skis",
+      "defaultFieldEligibilityGroup": "ce_skis.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_gender",
+      "defaultFieldEligibilityGroup": "ce_gender.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_searchPage",
+      "defaultFieldEligibilityGroup": "ce_skiFinder.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_terrain",
+      "defaultFieldEligibilityGroup": "ce_terrain.default",
+      "disabled": false
+    },
+    {
+      "entityType": "financialProfessional",
+      "disabled": true
+    },
+    {
+      "entityType": "hotel",
+      "disabled": true
+    },
+    {
+      "entityType": "job",
+      "disabled": true
+    },
+    {
+      "entityType": "ce_skiBoot",
+      "defaultFieldEligibilityGroup": "ce_skiBoot.default",
+      "disabled": false
+    },
+    {
+      "entityType": "faq",
+      "disabled": true
+    },
+    {
+      "entityType": "helpArticle",
+      "disabled": true
+    },
+    {
+      "entityType": "ce_category",
+      "defaultFieldEligibilityGroup": "ce_category.default",
+      "disabled": false
+    },
+    {
+      "entityType": "product",
+      "defaultFieldEligibilityGroup": "product.default",
+      "disabled": true
+    },
+    {
+      "entityType": "ce_productType",
+      "defaultFieldEligibilityGroup": "ce_productType.default",
+      "disabled": false
+    },
+    {
+      "entityType": "ce_dmRoot",
+      "defaultFieldEligibilityGroup": "ce_dmRoot.default",
+      "disabled": false
+    }
+  ]
+}

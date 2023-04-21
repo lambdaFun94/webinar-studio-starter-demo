@@ -4,7 +4,7 @@ export interface BigButtonProps {
 }
 
 export const initialProps: BigButtonProps = {
-  title: "Button Title",
+  title: "Blank",
   href: "#",
 };
 

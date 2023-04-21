@@ -2,21 +2,21 @@ export interface ParagraphProps {
   value: string;
   textSize?: "xs" | "sm" | "base" | "lg" | "xl" | "2xl";
   fontWeight?:
-    | "thin"
-    | "extralight"
-    | "light"
-    | "normal"
-    | "medium"
-    | "semibold"
-    | "bold"
-    | "extrabold"
-    | "black";
+  | "thin"
+  | "extralight"
+  | "light"
+  | "normal"
+  | "medium"
+  | "semibold"
+  | "bold"
+  | "extrabold"
+  | "black";
 }
 
 export const initialProps: ParagraphProps = {
   value: "Paragraph",
-  textSize: "base",
-  fontWeight: "normal",
+  textSize: "2xl",
+  fontWeight: "black",
 };
 
 const Paragraph = ({ value, textSize, fontWeight }: ParagraphProps) => {

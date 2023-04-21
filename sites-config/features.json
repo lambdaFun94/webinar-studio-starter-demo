@@ -24,10 +24,6 @@
         "primary": false
       },
       "fields": [
-        "name",
-        "c_price",
-        "description",
-        "photoGallery",
         "slug"
       ]
     }

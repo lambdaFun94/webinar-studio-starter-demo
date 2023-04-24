@@ -1,14 +1,14 @@
-export interface BigButtonProps {
+export interface BigButtonUpdatedProps {
   title?: string;
   link?: string;
 }
 
-export const initialProps: BigButtonProps = {
+export const initialProps: BigButtonUpdatedProps = {
   title: "Blank",
   link: "#",
 };
 
-const BigButton = ({ title, link }: BigButtonProps) => {
+const BigButtonUpdated = ({ title, link }: BigButtonUpdatedProps) => {
   return (
     <div className="mt-10">
       <a href={link}
@@ -20,4 +20,4 @@ const BigButton = ({ title, link }: BigButtonProps) => {
   );
 };
 
-export default BigButton;
+export default BigButtonUpdated;

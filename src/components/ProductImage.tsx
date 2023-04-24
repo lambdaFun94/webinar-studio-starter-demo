@@ -5,7 +5,7 @@ export interface ProductImageProps {
 
 export const initialProps: ProductImageProps = {
   src: "https://dynl.mktgcdn.com/p/CSFKvh8AjX-j6N8xztp5eNVo75d-4Hc4afbbGzBAeiE/1280x1280",
-  alt: "Light green backpack with black canvas straps and front zipper pouch.",
+  alt: "Picture of a pair of skis",
 };
 
 export default function ProductImage({ src, alt }: ProductImageProps) {
